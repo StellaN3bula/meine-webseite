@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="mediaQueryDatei.css">
+    <title>To-Do-Liste</title>
+
+
+    <style>
+        body {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: "Orbitron", sans-serif;
+            background-color: darkcyan;
+        }
+
+        .box {
+            background-color: whitesmoke;
+            margin: 5em;
+            padding: 5em;
+            border: 0.3em solid silver;
+        }
+
+        header {
+            background-color: aquamarine;
+            color: darkblue;
+            text-align: center;
+            padding: 0.5em;
+
+        }
+
+        nav {
+            text-decoration: underline;
+            color: chocolate;
+        }
+
+        span {
+            display: inline-block;
+            width: auto;
+            padding: 10px;
+            margin-right: 50px;
+            font: blod 16pt Verdana;
+        }
+
+        #ausgabe_E {
+            border: 3px solid lime;
+            color: limegreen;
+            border-radius: 5px;
+            width: 200px;
+            margin-top: 50px;
+        }
+
+        /* Mobile Phones */
+        @media (max-width:480px) {
+            .box{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                
+            }
+        }
+
+        @media (max-width:768px) {
+            .box{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                
+            }
+        }
+
+
+        @media screen and (max-width: 600px) {
+
+            .box{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        /* Tablets */
+        @media screen and (max-width: 834px) {
+            .box{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+
+            .box{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                
+            }
+        }
+    </style>
+
+    <script>
+        var erledigt = "Aufgaben Erledigt: ";
+        var zahl_E = 0;
+
+        function toDosLernen(element) {
+            if (element.checked) {
+                zahl_E++;
+            } else {
+                zahl_E--;
+            }
+            document.getElementById('ausgabe_E').innerHTML = erledigt + zahl_E;
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById('ausgabe_E').innerHTML = erledigt + zahl_E;
+        });
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <header>
+            <h1>To-Do Liste:</h1>
+        </header>
+
+        <nav>
+            <h3>Üben: </h3>
+        </nav>
+
+        <section>
+            <form action="lernen">
+                <input type="checkbox" name="learn" id="HTML" onclick="toDosLernen(this)">
+                <label for="HTML">HTML</label><br>
+                <input type="checkbox" name="learn" id="CSS" onclick="toDosLernen(this)">
+                <label for="CSS">CSS</label><br>
+                <input type="checkbox" name="learn" id="JS" onclick="toDosLernen(this)">
+                <label for="JS">JS</label><br>
+                <input type="checkbox" name="learn" id="JAVA" onclick="toDosLernen(this)">
+                <label for="JAVA">JAVA</label><br>
+            </form>
+
+            <span id="ausgabe_E">Erledigte Aufgaben: </span>
+        </section>
+    </div>
+</body>
+
+</html>

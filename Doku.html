@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentationen</title>
+
+    <link rel="stylesheet" href="CSS_LP.css">
+    <link rel="stylesheet" href="mediaQueryDatei.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    *{
+/* Hintergrund */
+    --weißBlau: #F4F7FF;
+        --mittelhellBlau:#a5e0fcc0;
+
+    /*navbar*/
+    --schwarz:#000000;
+
+    /* Akzentfarben */
+    --grauBlau:#C2D4FF;
+
+    --limeGruen: #32CD32;
+
+
+    /* Buttons /Links */
+    --seeBlau:#7CA4FF;
+    --blau:#5D8EFE;
+
+    /* schrift */
+    --weiß:#FFFFFF;
+
+
+    /* Rahmenfarbe / Highlight */
+    --highlightBlau: #00b7ff;
+
+
+
+    /* font-family: "Butterfly Kids", cursive; */
+    font-family: 'Orbitron', sans-serif ; 
+
+}
+
+    body {
+        background-color: var(--mittelhellBlau);
+    }
+
+    h1{
+        color: var(--highlightBlau);
+        text-decoration: underline;
+    }
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .content aside img {
+        width: 40em;
+        margin: 1em;
+        border: 0.5em ridge var(--highlightBlau);
+    }
+
+    aside {
+        width: 40%;
+        margin: 2em;
+    }
+
+    section {
+        width: 50%;
+    }
+
+    .lesebox u{
+        color:var(--limeGruen);
+        background-color: var(--schwarz);
+    }
+    .bilder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        gap: 1em;
+        padding: 1em;
+    }
+
+    .bild1{
+        /* flex: 1 1 calc(33.33% - 2em); */
+        box-sizing: border-box;
+        margin-bottom: 2em;
+    }
+
+    .bild1 img{
+        width: 20em;
+        height: 30em;
+        border: 0.5em ridge var(--highlightBlau);
+    }
+
+
+
+    /* Mobile Phones */
+    @media (max-width:480px) {
+        .content{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content aside img{
+            width: 10em;
+        }
+
+
+
+    }
+
+    @media (max-width:768px) {}
+
+
+    @media screen and (max-width: 600px) {}
+
+    /* Tablets */
+    @media screen and (max-width: 834px) {}
+
+    @media screen and (max-width: 1200px) {}
+</style>
+
+<body>
+
+
+
+    <div class="container">
+        <h1>Übung 1: Einfache To-Do-Liste</h1>
+        <div class="content">
+
+            <aside class="logo_bg">
+                <img src="/BeWeSeite/bilder/Doku_ToDo/ToDo_1.png" width="800em" alt="Galaxy">
+            </aside>
+
+            <section id="doku_1">
+                <div class="lesebox">
+
+                    <p style="font-family: 'Merriweather', serif; line-height: 1.6;">
+                        <u>#Einführung:</u>
+<br><br>
+                        Projektname: <br>
+                        Einfache To-Do-Liste
+<br><br>
+                        Kurzbeschreibung: <br>
+                        Bei den Checkboxen kann man abhacken was man schon erledigt hat. 
+                        Unten im grünen Feld werden die erledigten Aufgaben angezeigt. Wenn man eine Checkbox wieder 
+                        entfernt dann wird die Zahl im grünen Feld auch wieder weniger.
+<br><br>
+                        Zweck: <br>
+                        Der Zweck dieses Projekts ist das ich JavaScript, HTML und CSS üben kann.
+                        <br><br>
+                        <u>#Technoligien:</u><br>
+                        •	VS-Code <br>
+                        •	HTML <br>
+                        •	CSS <br>
+                        •	JavaScript <br>
+                        <br><br>
+                        <u>#Installation und Setup:</u> <br>
+                        Sollte auf jedem Browser funktionieren (kann es leider nicht testen da ich es bei mir nicht umstellen kann – hab das Problem noch nicht gelöst)
+                        <br><br>
+                        <u>#Verwendung:</u> <br>
+                        Klicke in die Checkbox vor dem erledigten Bereich – Checkbox bekommt ein blaues Häkchen und wird automatisch 
+                        zu „Aufgaben Erledigt“ hinzugefügt. Wenn man das Häkchen wieder entfernt wird es auch bei den „Aufgaben Erledigt“ entfernt.
+                        <br><br>
+                        <u>#Features:</u> <br>
+                        Wird automatisch zu „Aufgaben Erledigt“ hinzugefügt
+                        <br><br>
+                        <u>#Bekannte Probleme:</u> <br>
+                        Beim „Seite neu laden“ setzt sich nur die „Aufgaben Erledigt“ zurück nicht aber die blauen Häkchen, 
+                        wenn man diese entfernt dann wir bei den „Aufgaben Erledigt“ eine minus Zahl angezeigt. (Bild 4 und Bild 5) Umgehen kann man 
+                        das Problem indem man die Seite schließt und wieder neu öffnet.
+                        <br><br>
+                        <u>#Zukünftige Verbesserungen</u>: <br>
+                        •	Hinzufügen von Benutzereingaben <br>
+                        •	Beheben des vorhandenen Problems mit dem „Seite neu Laden“ und der Minus Zahl <br>
+                        <br><br>
+                        <u>#Credits:</u> <br>
+                        •	Übung im Unterricht –Hauptstädte Quiz war die Vorlage.  <br>
+                        •	Reden mit einem Kumpel der mich darauf hinwies das ich es auch kürzer schreiben kann <br>
+
+                    </p>
+                </div>
+            </section>
+
+
+        </div>
+
+    </div>
+
+    <div class="bilder">
+        <div class="bild1">
+            <img src="/BeWeSeite/bilder/Doku_ToDo/ToDo_1.png" alt="doku_1" width="400em" height="500em">
+            <pre>Bild 1: nach dem Öffnen</pre>
+        </div>
+        <div class="bild1">
+            <img src="/BeWeSeite/bilder/Doku_ToDo/ToDo_2.png" alt="doku_2" width="400em" height="500em">
+            <pre>Bild 2: erledigten Aufgaben ausgewählt</pre>
+        </div>
+        <div class="bild1">
+            <img src="/BeWeSeite/bilder/Doku_ToDo/ToDo_3.png" alt="doku_3" width="400em" height="500em">
+            <pre>Bild 3: nur noch eines ausgewählt</pre>
+        </div>
+        <div class="bild1">
+            <img src="/BeWeSeite/bilder/Doku_ToDo/ToDo_4.png" alt="doku_4" width="400em" height="500em">
+            <pre>Bild 4: Seite neu geladen -> grüne Box wird auf "0" 
+                gesetzt aber die Checkbox nicht</pre>
+        </div>
+        <div class="bild1">
+            <img src="/BeWeSeite/bilder/Doku_ToDo/ToDo_5.png" alt="doku_5" width="400em" height="500em">
+            <pre>Bild 5: Chechbox wurde entfernt und grüne Box 
+                zählt rückwärts</p>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <footer>
+        <Kontakt:>&copy; 2024 Regina Pölleritzer. Alle Rechte vorbehalten. Kontakt: <a href="mailto:r.poelleritzer@gmx.at ">r.poelleritzer@gmx.at</a> </p>
+    </footer>
+
+</body>
+
+</html>

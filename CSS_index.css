@@ -1,0 +1,459 @@
+*{
+/* Hintergrund */
+    --weißBlau: #F4F7FF;
+        --mittelhellBlau:#a5e0fcc0;
+
+    /*navbar*/
+    --schwarz:#000000;
+
+    /* Akzentfarben */
+    --grauBlau:#C2D4FF;
+
+    --limeGruen: #32CD32;
+
+
+    /* Buttons /Links */
+    --seeBlau:#7CA4FF;
+    --blau:#5D8EFE;
+
+    /* schrift */
+    --weiß:#FFFFFF;
+
+
+    /* Rahmenfarbe / Highlight */
+    --highlightBlau: #00b7ff;
+
+
+
+    /* font-family: "Butterfly Kids", cursive; */
+    font-family: 'Orbitron', sans-serif ; 
+
+}
+
+body{
+    background-color: var(--mittelhellBlau);
+}
+
+header{
+    background-image: url(/WS_Layout_Handy/Bilder/Galaxy_4_HingergrungBild.jpg);
+    width: auto;
+    height: 5em;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+    align-content: center;
+    
+
+}
+
+header h1{
+    font-family: "Butterfly Kids", cursive;
+    color: var(--highlightBlau);
+}
+.navbar{
+    background-color: var(--schwarz);
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: var(--mittelhellBlau);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+color: var(--limeGruen);
+}
+
+.navbar-toggler{
+    display: none;
+    background-color: var(--schwarz);
+    color: var(--weiß);
+    border: none;
+    font-size: 1.5em;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navbar-dropdown{
+    display: flex;
+}
+
+.form-inline{
+    display: flex;
+    align-items: center;
+}
+.fuellBox {
+    background-color:var(--blau);
+    width: 15em;
+    height: 2em;
+    border-radius: 2em;
+
+}
+
+.btn {
+    background-color: var(--blau);
+    width: 10em;
+    height: 2.4em;
+    border-radius: 2em;
+    color: var(--schriftFarbe);
+}
+
+.motto{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+}
+.motto aside img{
+    width: 20em;
+    margin: 1em;
+    border: 0.5em ridge var(--highlightBlau);
+}
+
+.motto section{
+    
+    border: 0.5em ridge var(--highlightBlau);
+    background-color: var(--dunklesGrau) ;
+    text-align: center;
+}
+
+aside{
+    width: 40%;
+    margin: 2em;
+}
+section{
+    width: 50%;
+}
+
+#aboutMe section{
+    border: 0.5em ridge var(--highlightBlau);
+    background-color: var(--dunklesGrau) ;
+    text-align: start;
+    padding: 1em;
+}
+
+#aboutMe section u{
+    color:var(--limeGruen);
+    background-color: var(--schwarz);
+    
+}
+#aboutMe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#aboutMe aside img{
+    width: 20em;
+    margin: 1em;
+    border: 0.5em ridge var(--highlightBlau);
+
+}
+
+#uebung_1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#uebung_1 aside img{
+    width: 20em;
+    margin: 1em;
+    border: 0.5em ridge var(--highlightBlau);
+}
+
+#doku_ToDo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#doku_ToDo aside img{
+    width: 20em;
+    margin: 1em;
+    border: 0.5em ridge var(--highlightBlau);
+}
+
+
+/* Mobile Phones */
+@media (max-width:480px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-inline{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .motto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .motto aside img{
+        width: 10em;
+
+    }
+
+    #aboutMe {
+        flex-direction:column ;
+        align-items: center;
+    }
+
+
+    #aboutMe aside img{
+        width: 10em;
+    }
+
+    #uebung_1 {
+        flex-direction:column ;
+        align-items: center;
+    }
+
+
+    #uebung_1 aside img{
+        width: 10em;
+    }
+
+    #doku_ToDo {
+        flex-direction:column ;
+        align-items: center;
+    }
+
+
+    #doku_ToDo aside img{
+        width: 10em;
+    }
+
+}
+
+@media (max-width:768px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-inline{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .motto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .motto aside img{
+        width: 10em;
+    }
+
+    #aboutMe {
+        flex-direction:column ;
+        align-items: center;
+    }
+
+    #aboutMe aside img{
+        width: 10em;
+    }
+
+    
+    #uebung_1 {
+        flex-direction:column ;
+        align-items: center;
+    }
+
+
+    #uebung_1 aside img{
+        width: 10em;
+    }
+
+    #doku_ToDo {
+        flex-direction:column ;
+        align-items: center;
+    }
+
+
+    #doku_ToDo aside img{
+        width: 10em;
+    }
+
+}
+
+
+@media screen and (max-width: 600px ){
+    .navbar-dropdown{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-toggler{
+        display: block;
+    }
+
+    .navbar-dropdown.show{
+        display: flex;
+    }
+
+    .motto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .motto aside img{
+        width: 10em;
+    }
+
+    #aboutMe {
+        flex-direction:column ;
+        align-items: center;
+    }
+
+    #aboutMe aside img{
+        width: 10em;
+    }
+
+    
+    #uebung_1 {
+        flex-direction:column ;
+        align-items: center;
+    }
+
+
+    #uebung_1 aside img{
+        width: 10em;
+    }
+
+    #doku_ToDo {
+        flex-direction:column ;
+        align-items: center;
+    }
+
+
+    #doku_ToDo aside img{
+        width: 10em;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 834px ){
+    .navbar-dropdown{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-toggler{
+        display: block;
+    }
+
+    .navbar-dropdown.show{
+        display: flex;
+    }
+
+    .motto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .motto aside img{
+        width: 10em;
+    }
+
+    #aboutMe {
+        flex-direction:column ;
+        align-items: center;
+    }
+
+    #aboutMe aside img{
+        width: 10em;
+    }
+
+    
+    #uebung_1 {
+        flex-direction:column ;
+        align-items: center;
+    }
+
+
+    #uebung_1 aside img{
+        width: 10em;
+    }
+
+    #doku_ToDo {
+        flex-direction:column ;
+        align-items: center;
+    }
+
+
+    #doku_ToDo aside img{
+        width: 10em;
+    }
+}
+
+@media screen and (max-width: 1200px ){
+    .navbar-dropdown{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-toggler{
+        display: block;
+    }
+
+    .navbar-dropdown.show{
+        display: flex;
+    }
+
+    .motto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .motto aside img{
+        width: 10em;
+    }
+
+    #aboutMe {
+        flex-direction:column ;
+        align-items: center;
+    }
+
+    #aboutMe aside img{
+        width: 10em;
+    }
+
+    
+    #uebung_1 {
+        flex-direction:column ;
+        align-items: center;
+    }
+
+
+    #uebung_1 aside img{
+        width: 10em;
+    }
+
+    #doku_ToDo {
+        flex-direction:column ;
+        align-items: center;
+    }
+
+
+    #doku_ToDo aside img{
+        width: 10em;
+    }
+}
+

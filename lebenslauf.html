@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Schriftart -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS_Lebenslauf.css">
+    <title>Lebenslauf</title>
+
+
+    <script>
+        function ausklappbarerText_Box_2() {
+            var x = document.getElementById("faehigkeiten");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function ausklappbarerText_Box_3() {
+            var x = document.getElementById("erfahrungen");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function ausklappbarerText_Box_4() {
+            var x = document.getElementById("ausbildung");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function ausklappbarerText_Box_5() {
+            var x = document.getElementById("zertifikate");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div class="bigBox">
+
+        <div class="headerBox">
+            <header>
+                <h1>Lebenslauf</h1>
+            </header>
+
+            <nav class="navbar">
+                <button class="navbar-toggler" onclick="toggleMenu()">&#9776;</button>
+                <div class="navbar-dropdown">
+                    <a class="nav-link" href="index.html">zurück</a>
+
+
+                </div>
+
+                <form class="form-inline" action="/WS_Layout_Handy/suchErgebnisse.html">
+                    <input class="fuellBox " type="text" name="query" placeholder="Suche">
+                    <button class="btn " type="submit">🔍Search🔎</button>
+                </form>
+            </nav>
+        </div>
+
+
+        <div class="boxHome">
+
+            <aside>
+                <div class="infoBox">
+                    <h1>Regina Pölleritzer</h1>
+                    <p>
+                        Kontakt: <br>
+                        <a href="mailto:r.polleritzer@gmx.at">r.poelleritzer@gmx.at</a>
+                    </p>
+                    <p>LinkedIn: <br>
+                        <a href="https://www.linkedin.com/in/regina-p%C3%B6lleritzer/" target="_blank">Regina
+                            Pölleritzer</a>
+                    </p>
+                    <p>Zertifikate werden <br>
+                        nur auf Anfrage verschickt</p>
+                </div>
+            </aside>
+
+            <section>
+                <div>
+                    <h2>Fähigkeiten</h2>
+                    <button class="btn" onclick="ausklappbarerText_Box_2()">click for more</button>
+                    <div id="faehigkeiten" style="display: none;">
+                        <p>
+                            Sprachkenntnisse: <br>
+                            👽 Englisch: B2 <br>
+                            👽 Deutsch: Muttersprache <br>
+                            <br>
+                            Programmiersprachen: <br>
+                            👾 Java <br>
+                            👾 HTML, CSS, Bootstrap, JS <br>
+                            <br>
+                            Software: <br>
+                            💾 VS-Code <br>
+                            💾 IntelliJ <br>
+                            <br>
+                            EDV – Kenntnisse: <br>
+                            💻 Microsoft Office – gute Kenntnisse <br>
+                            💻 Adobe Photoshop – Grundkenntnisse <br>
+                            💻 Gimp 2 – gute Kenntnisse <br>
+                            💻 Inkscape – Grundkenntnisse <br>
+                            💻 Autodesk SketchBook - gute Kenntnisse <br>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Erfahrungen</h2>
+                    <button class="btn" onclick="ausklappbarerText_Box_3()">click for more</button>
+                    <div id="erfahrungen" style="display: none;">
+                        <p>
+                            seit 01/2023 <br>
+                            Berufliche Neuorientierung und Ausbildung zur Applikationsentwicklerin <br>
+                            <br>
+                            01/2022 <br>
+                            Praktikum als Mechatronikerin <br>
+                            <br>
+                            05/2020 bis 02/2021 <br>
+                            Bedingte Auszeit durch Covid-19 und Beruflicher Neuorientierung in Richtung Mechatroniker
+                            <br>
+                            <br>
+                            07/1998 bis 04/2020 <br>
+                            im Verkauf tätig
+
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <h2>Ausbildung</h2>
+                    <button class="btn" onclick="ausklappbarerText_Box_4()">click for more</button>
+                    <div id="ausbildung" style="display: none;">
+                        <p>
+                            BITEC Ausbildung zur Applikationsentwicklerin
+                            <br> <br>
+                            Ausbildung zur Mechatronikerin (abgebrochen)
+                        </p>
+                    </div>
+
+                </div>
+                <div>
+                    <h2>Zertifikate</h2>
+                    <button class="btn" onclick="ausklappbarerText_Box_5()">click for more</button>
+                    <div id="zertifikate" style="display: none;">
+                        <p>
+                            🏆ICDL <br>
+                            🏆Kursbestätigung SPS <br>
+                            🏆Kursbestätigung elektrotechnisch unterwiesene Person
+                        </p>
+
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+
+
+
+        <footer>
+            <nav>
+                <p>&copy; 2024 Regina Pölleritzer. Alle Rechte vorbehalten.Kontakt:
+                    <a href="mailto:r.polleritzer@gmx.at">r.poelleritzer@gmx.at</a>
+                </p>
+                </p>
+            </nav>
+        </footer>
+    </div>
+    <script>
+        function toggleMenu() {
+            const dropdown = document.querySelector('.navbar-dropdown');
+            dropdown.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
