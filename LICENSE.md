@@ -12,7 +12,7 @@ You may view the content of this website through the provided link. Any unauthor
 
 ### Contact
 
-For inquiries or permissions, please contact me at r.poelleritzer@gmx.at .
+For inquiries or permissions, please contact me at <a href="mailto:r.poelleritzer@gmx.at">r.poelleritzer@gmx.at</a>  .
 
 
 
@@ -31,7 +31,7 @@ Diese Webseite ist urheberrechtlich geschützt. Der Inhalt dieser Webseite, eins
 - Die Webseite darf nicht verändert, angepasst oder für andere Zwecke verwendet werden.
 - Die Weitergabe von Inhalten oder Teilen der Webseite ist ohne ausdrückliche Genehmigung untersagt.
 
-Für Anfragen zur Nutzung oder weiteren Informationen kontaktieren Sie bitte [r.poelleritzer@gmx.at](mailto:r.poelleritzer@gmx.at).
+Für Anfragen zur Nutzung oder weiteren Informationen kontaktieren Sie bitte <a href="mailto:r.poelleritzer@gmx.at">r.poelleritzer@gmx.at</a> .
 
 ---
 
