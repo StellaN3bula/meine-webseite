@@ -26,7 +26,7 @@ As this is a personal portfolio, contributions are not accepted. Please respect 
 
 ## Contact
 
-For any inquiries, please contact me at [r.poelleritzer@gmx.at] (mailto:r.poelleritzer@gmx.at).
+For any inquiries, please contact me at <a href="mailto:r.poelleritzer@gmx.at">r.poelleritzer@gmx.at</a> .
 
 Thank you for visiting!
 
@@ -58,7 +58,8 @@ Um die Webseite anzusehen, öffne einfach den bereitgestellten Link in deinem We
 
 ## Kontakt
 
-Für Fragen oder Feedback kannst du mich gerne unter [r.poelleritzer@gmx.at](mailto:r.poelleritzer@gmx.at) erreichen.
+Für Fragen oder Feedback kannst du mich gerne unter <a href="mailto:r.poelleritzer@gmx.at">r.poelleritzer@gmx.at</a> erreichen.
+
 
 ---
 
