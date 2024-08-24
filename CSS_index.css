@@ -35,7 +35,7 @@ body{
 }
 
 header{
-    background-image: Galaxy_4_HingergrungBild.jpg;
+    background-image: url('Galaxy_4_HingergrungBild.jpg');
     width: auto;
     height: 5em;
     background-repeat: no-repeat;
