@@ -66,29 +66,28 @@ body{
     <script>
         const seiten = [
             {title: "index", URL: "index.html", keywords: ["über mich", "übungen", "Dokumentation", "Doku"]},
-            {title: "lebenslauf", URL: "lebenslauf.html", keywords: ["Kontakt", "E-Mail", "Email", "Fähigkeiten", "Erfahrungen", "Ausbildung", "Zertifikate", "Lebenslauf",
-                "Sprachkenntnisse", "Software", "Programmiersprachen", "EDV"]},
+            {title: "lebenslauf", URL: "lebenslauf.html", keywords: ["Kontakt", "E-Mail", "Email", "Fähigkeiten", "Erfahrungen", "Ausbildung", "Zertifikate", 
+                            "Sprachkenntnisse", "Software", "Programmiersprachen", "EDV"]},
             {title: "übungen", URL: "Einfache_To_Do_Liste.html"},
             {title: "Dokumentationen", URL: "Doku.html"}
         ];
     
-        // Hole den Query-Parameter aus der URL
+        // Holt den Query-Parameter aus der URL
         const params = new URLSearchParams(window.location.search);
         const query = params.get('query') ? params.get('query').toLowerCase() : '';
     
-        console.log("Suchbegriff: ", query); // Debugging
+
     
-        // Filtere die Seiten
+        // Filtert die Seiten
         const results = seiten.filter(seite => 
             seite.title.toLowerCase().includes(query) || 
             (seite.keywords && seite.keywords.some(keyword => keyword.toLowerCase().includes(query)))
         );
     
-        console.log("Gefundene Ergebnisse: ", results); // Debugging
-    
-        // Hole das Ergebnis-Element
+
+        // Holt das Ergebnis-Element
         const resultsContainer = document.getElementById('results');
-        resultsContainer.innerHTML = ''; // Leere das Ergebnis-Element, falls bereits Inhalt vorhanden ist
+        resultsContainer.innerHTML = ''; // Leert das Ergebnis-Element, falls bereits was drinnen steht
     
         // Ergebnisse anzeigen
         if (results.length > 0) {
@@ -96,7 +95,7 @@ body{
                 const li = document.createElement('li');
                 const link = document.createElement('a');
                 link.href = ergebnis.URL;
-                link.textContent = ergebnis.title; // Hier 'textContent' verwenden
+                link.textContent = ergebnis.title; 
                 li.appendChild(link);
                 resultsContainer.appendChild(li);
             });
