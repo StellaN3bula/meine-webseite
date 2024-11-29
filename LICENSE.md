@@ -24,7 +24,7 @@ For inquiries or permissions, please contact me at <a href="mailto:r.poelleritze
 
 © 2024 Regina Pölleritzer. Alle Rechte vorbehalten.
 
-Diese Webseite ist urheberrechtlich geschützt. Der Inhalt dieser Webseite, einschließlich, aber nicht beschränkt auf Texte, Bilder, Design und Code, darf ohne ausdrückliche schriftliche Genehmigung von [Dein Name] nicht kopiert, reproduziert, modifiziert, verteilt oder veröffentlicht werden.
+Diese Webseite ist urheberrechtlich geschützt. Der Inhalt dieser Webseite, einschließlich, aber nicht beschränkt auf Texte, Bilder, Design und Code, darf ohne ausdrückliche schriftliche Genehmigung von Regina Pölleritzer nicht kopiert, reproduziert, modifiziert, verteilt oder veröffentlicht werden.
 
 **Nutzungsbedingungen:**
 - Die Webseite und ihr Inhalt sind ausschließlich für den persönlichen Gebrauch bestimmt.
